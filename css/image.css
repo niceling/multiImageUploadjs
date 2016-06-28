@@ -1,0 +1,55 @@
+body,
+div {
+	margin: 0px auto;
+	padding: 0px;
+}
+
+.main_container{
+	padding: 10px;
+}
+
+.fileInputContainer {
+	height: 256px;
+	background: url(../img/image_add.png);
+	position: relative;
+	width: 256px;
+}
+
+.fileContainer{
+	height: 256px;
+	position: relative;
+	width: 256px;
+}
+.fileInput {
+	height: 256px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	cursor: pointer;
+}
+
+.add_image,.div_image{
+	height: 340px;
+	width: 276px;
+	border: 1px solid #AACCDD;
+	display:block;
+	float: left;
+}
+.edit_box{
+	border-top:1px solid #AACCDD ;
+}
+
+.btn_box,.link_box{
+	padding:5px 10px 0px 10px;
+}
+
+.padding-10{
+	padding: 10px;;
+}
+
+.txt_link{
+	width: 180px;;
+}

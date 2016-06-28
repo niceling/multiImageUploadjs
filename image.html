@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>多图片上传</title>
+		<link rel="stylesheet" href="css/image.css" />
+		<script type="text/javascript" src="js/jquery-1.7.2.js" ></script>
+		<script type="text/javascript" src="js/multiImageUpload.js" ></script>
+		<script type="text/javascript" SRC="js/move.js"></script>
+		<script>
+			function callback(){
+				if(jQuery(".image").length==5){
+					jQuery(".add_image").hide();
+				}
+				//jQuery("#saveForm").append("<input type='hidden' name='img_url' value='"+file.value+"'/>");
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="main_container">
+			<h6>多图片上传演示DEMO</h6>
+			<div class="image_container">
+				<!--新增图片开始-->
+				<div class="add_image">
+					<div class="padding-10">
+						<div class="fileInputContainer">
+							<input class="fileInput" type="file" onchange="previewSingleImage('div_image',this,callback())"/>
+						</div>
+					</div>
+				</div>
+
+				<!--一条完整的图片信息开始-->
+				<div style="display: none;" id="div_image">
+					<div class="div_image">
+						<div class="padding-10">
+							<div class="fileContainer">
+								<img class="image" width="256" height="256"/>
+							</div>
+						</div>
+						<div class="edit_box">
+							<div class="btn_box">
+								<a  href="javascript:void(0);" class="moveUp" onclick="moveToUp(jQuery(this).parent().parent().parent())">上移</a><a  href="javascript:void(0);" class="moveDown" onclick="moveToDown(jQuery(this).parent().parent().parent())">下移</a>
+							</div>
+							<div class="link_box">
+								<input type="text" placeholder="链接地址" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--一条完整的图片信息结束-->
+			</div>
+
+		</div>
+	</body>
+
+</html>
