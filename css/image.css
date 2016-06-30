@@ -20,7 +20,26 @@ div {
 	position: relative;
 	width: 256px;
 }
-.fileInput {
+
+.fileContainer .delete_image {
+	z-index: 9999;
+	top: 0px;
+	right: 0px;
+	position: absolute;
+	margin-top: -10px;
+	margin-right: -10px;
+}
+
+.fileInputReset {
+	height: 20px;
+	overflow: hidden;
+	position: absolute;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	cursor: pointer;
+	width: 60px;;
+}
+#fileInput {
 	height: 256px;
 	overflow: hidden;
 	position: absolute;
@@ -30,7 +49,6 @@ div {
 	filter: alpha(opacity=0);
 	cursor: pointer;
 }
-
 .add_image,.div_image{
 	height: 340px;
 	width: 276px;
@@ -43,7 +61,8 @@ div {
 }
 
 .btn_box,.link_box{
-	padding:5px 10px 0px 10px;
+	padding:0px 10px 0px 10px;
+	clear: both;
 }
 
 .padding-10{
@@ -52,4 +71,20 @@ div {
 
 .txt_link{
 	width: 180px;;
+}
+
+.btn_box li{
+	list-style-type: none;
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+.link_box li{
+	list-style-type: none;
+	float: left;
+	text-align: center;
+}
+.btn_box li a{
+	text-decoration: none;
+	width: 60px;
 }
