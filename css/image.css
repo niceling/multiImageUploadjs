@@ -37,17 +37,20 @@ div {
 	opacity: 0;
 	filter: alpha(opacity=0);
 	cursor: pointer;
-	width: 60px;;
+	width: 60px;
 }
 #fileInput {
+	width: 256px;
 	height: 256px;
 	overflow: hidden;
 	position: absolute;
 	right: 0;
 	top: 0;
+	cursor: pointer;
+	line-height: 256px;
+	font-size: 100px;
 	opacity: 0;
 	filter: alpha(opacity=0);
-	cursor: pointer;
 }
 .add_image,.div_image{
 	height: 340px;
@@ -87,4 +90,8 @@ div {
 .btn_box li a{
 	text-decoration: none;
 	width: 60px;
+}
+
+.clearboth{
+	clear: both;
 }
